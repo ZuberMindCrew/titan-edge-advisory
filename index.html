@@ -432,7 +432,7 @@
         }
 
         .record-card:nth-child(3) .record-card-bg {
-            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/r.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Hb1Y2JIqdoXt9sluWJsbTdFI0wlH0T.png');
         }
 
         .record-card:nth-child(4) .record-card-bg {
@@ -495,7 +495,7 @@
             line-height: 1.6;
         }
 
-        /* Strategic Outlook Section */
+        /* Strategic Outlook Section - Updated */
         .strategic-outlook {
             padding: 80px 0;
             text-align: center;
@@ -509,15 +509,17 @@
         }
 
         .strategic-outlook h2 {
-            font-size: 36px;
-            color: #1a2b3c;
-            margin-bottom: 10px;
+            font-size: 48px;
+            color: #000;
+            margin-bottom: 20px;
+            font-weight: 600;
         }
 
-        .strategic-outlook p {
-            font-size: 18px;
-            color: #555;
+        .strategic-outlook .subtitle {
+            font-size: 24px;
+            color: #3a6ea5;
             margin-bottom: 40px;
+            font-weight: normal;
         }
 
         .challenges-container {
@@ -525,41 +527,111 @@
             justify-content: center;
             flex-wrap: wrap;
             gap: 20px;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
         }
 
         .challenge-card {
-            background-color: #f0f0f0;
+            background-color: #e8e8e8;
             border-radius: 10px;
-            padding: 20px;
-            width: 220px;
+            padding: 25px 20px;
+            width: 260px;
             text-align: center;
         }
 
+        .challenge-card:nth-child(2) {
+            background-color: #e5ddd9;
+        }
+
+        .challenge-card:nth-child(4) {
+            background-color: #e5ddd9;
+        }
+
         .challenge-card h3 {
-            font-size: 18px;
-            margin-bottom: 10px;
-            color: #333;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #000;
+            font-weight: 600;
         }
 
         .challenge-card p {
-            font-size: 14px;
-            color: #666;
+            font-size: 16px;
+            color: #3a6ea5;
             margin-bottom: 0;
+            line-height: 1.5;
         }
 
         .strategic-outlook-footer {
-            max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #f8f8f8;
-            border-radius: 10px;
+            padding: 0;
         }
 
         .strategic-outlook-footer p {
-            font-size: 18px;
-            color: #333;
+            font-size: 24px;
+            color: #3a6ea5;
             margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 1024px) {
+            .strategic-outlook h2 {
+                font-size: 40px;
+            }
+            
+            .strategic-outlook .subtitle,
+            .strategic-outlook-footer p {
+                font-size: 22px;
+            }
+            
+            .challenge-card {
+                width: 240px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .strategic-outlook h2 {
+                font-size: 36px;
+            }
+            
+            .strategic-outlook .subtitle,
+            .strategic-outlook-footer p {
+                font-size: 20px;
+            }
+            
+            .challenge-card {
+                width: 220px;
+                padding: 20px 15px;
+            }
+            
+            .challenge-card h3 {
+                font-size: 18px;
+            }
+            
+            .challenge-card p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .challenges-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .challenge-card {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .strategic-outlook h2 {
+                font-size: 30px;
+            }
+            
+            .strategic-outlook .subtitle,
+            .strategic-outlook-footer p {
+                font-size: 18px;
+            }
         }
 
         /* Client Call Section */
@@ -1298,6 +1370,14 @@
                 height: 120px;
             }
 
+            .metric-percentage {
+                font-size: 28px;
+            }
+
+            .metric-label {
+                font-size: 12px;
+            }
+
             .service-card, .expertise-card, .forum-event {
                 min-width: 100%;
             }
@@ -1653,29 +1733,29 @@
     <section class="strategic-outlook">
         <div class="strategic-outlook-container">
             <h2>Is Your Strategic Outlook Holding You Back?</h2>
-            <p>Many organizations struggle with:</p>
+            <p class="subtitle">Many organizations struggle with :</p>
             
             <div class="challenges-container">
                 <div class="challenge-card">
                     <h3>Misaligned Leadership Teams</h3>
-                    <p>Conflicting priorities and communication gaps</p>
+                    <p>Causing slow execution and<br>poor performance</p>
                 </div>
                 <div class="challenge-card">
                     <h3>Scaling Challenges</h3>
-                    <p>Operational inefficiencies and growth barriers</p>
+                    <p>that expose skill gaps and<br>operational inefficiencies</p>
                 </div>
                 <div class="challenge-card">
                     <h3>Change Resistance</h3>
-                    <p>Cultural inertia and implementation failures</p>
+                    <p>when adopting new technology or<br>restructuring</p>
                 </div>
                 <div class="challenge-card">
                     <h3>Fragmented Efforts</h3>
-                    <p>Disconnected strategies and wasted resources</p>
+                    <p>Impacting the bottom line and<br>brand experience</p>
                 </div>
             </div>
             
             <div class="strategic-outlook-footer">
-                <p>We solve these challenges with proven transformational strategies and executional frameworks</p>
+                <p>We solve these challenges with proven transformational<br>strategies and executional frameworks</p>
             </div>
         </div>
     </section>
